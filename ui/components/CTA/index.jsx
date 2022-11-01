@@ -1,5 +1,5 @@
 import React from 'react'
-import { HStack, Image, VStack, Text, Flex } from '@chakra-ui/react'
+import { Image, VStack, Text, Flex } from '@chakra-ui/react'
 import { ButtonPrimary } from '../Button'
 
 function CTA() {
