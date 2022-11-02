@@ -8,7 +8,7 @@ function Navbar() {
     return (
         <HStack justifyContent={'space-between'} px='10%' pt='40px' >
             <HStack alignItems={'flex-start'}>
-                <Image src={'/assets/SquidLogo.svg'} boxSize={{ base: '31px', lg: '41px' }} />
+                <Image src={'/assets/SquidLogo.svg'} boxSize={{ base: '31px', lg: '41px' }} alt='logo squid' />
                 <Text fontSize={{ base: '22px', lg: '28px' }} fontWeight={500}>Squid</Text>
             </HStack>
             <HStack>

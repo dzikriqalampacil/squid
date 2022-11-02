@@ -5,7 +5,7 @@ function Card({ image, title, desc }) {
     return (
         <VStack bg='#18181C' borderRadius={'20px'} w={{ base: '250px', lg: '350px' }} h={{ base: '271px', lg: '371px' }} justify={'center'} align='center' px='23px' py='50px'>
             <Flex bg='#222228' borderRadius={'30px'} p={{ base: '15px', lg: '30px' }} mb={{ base: '10px', lg: '40px' }} justify={'center'}>
-                <Image src={image} boxSize={{ base: '30px', lg: '45px' }} />
+                <Image src={image} boxSize={{ base: '30px', lg: '45px' }} alt={title} />
             </Flex>
             <Text textAlign={'center'} fontWeight={600} fontSize={{ base: '16', lg: '20px' }} color='white'>{title}</Text>
             <Text textAlign={'center'} fontSize='14px' color='#9E9E9E' mt='15px'>

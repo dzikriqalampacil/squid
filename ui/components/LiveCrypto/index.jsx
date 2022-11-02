@@ -15,7 +15,6 @@ function CryptoItem({ name, id, price, change }) {
                     <Text fontSize='16px' color='#e64b58'>{change}%</Text> :
                     <Text fontSize='16px' color='#20BCA4'>+{change}%</Text>
                 }
-                {/* <Image w='145px' h='30px' src='/assets/Decor.svg' /> */}
                 <ButtonPrimary text='Trade' />
             </HStack>
             <Box h='1px' bg='rgba(244, 244, 244, 0.3)' mb='39px' />
@@ -56,7 +55,7 @@ function LiveCrypto({ cryptoData }) {
     return (
         <Flex flexDirection={'column'} justify='center' align='center' position='relative'>
             <CryptoList allCrypto={cryptoData} />
-            <Image src={'/assets/Decor.svg'} w='full' bottom='-12.5vw' position={'absolute'} zIndex='-1' />
+            <Image src={'/assets/Decor.svg'} w='full' bottom='-12.5vw' position={'absolute'} zIndex='-1' alt='decor_bg' />
         </Flex>
     )
 }

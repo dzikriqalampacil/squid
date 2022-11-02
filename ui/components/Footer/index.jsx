@@ -6,7 +6,7 @@ function Footer() {
         <>
             <Flex bg='#18181C' px='12%' py='50px' justify={'space-between'} flexDirection={{ base: 'column', md: 'row' }}>
                 <VStack w='full' align={'flex-start'}>
-                    <Image src='/assets/SquidLogo.svg' alignSelf={'flex-start'} mb='28px' />
+                    <Image src='/assets/SquidLogo.svg' alignSelf={'flex-start'} mb='28px' boxSize={'55px'} alt='logo squid' />
                     <Text color='#9E9E9E' fontSize='14px' lineHeight={'24px'} w={{ base: '80%', md: '40%' }}>
                         Trading cryptocurrencies involves significant risk and can result in the loss of your capital.
                     </Text>
@@ -42,17 +42,17 @@ function Footer() {
                 <HStack>
                     <Flex bg='#18181C' boxSize={'40px'} justify='center' align={'center'} borderRadius='16px'>
                         <Link href='https://twitter.com/' style={{ textDecoration: 'none' }} target="_blank">
-                            <Image src='/assets/Twitter.svg' />
+                            <Image src='/assets/Twitter.svg' boxSize={'18px'} alt='twitter' />
                         </Link>
                     </Flex>
                     <Flex bg='#18181C' boxSize={'40px'} justify='center' align={'center'} borderRadius='16px'>
                         <Link href='https://www.linkedin.com/' style={{ textDecoration: 'none' }} target="_blank">
-                            <Image src='/assets/LinkedIn.svg' />
+                            <Image src='/assets/LinkedIn.svg' boxSize={'18px'} alt='linkedin' />
                         </Link>
                     </Flex>
                     <Flex bg='#18181C' boxSize={'40px'} justify='center' align={'center'} borderRadius='16px'>
                         <Link href='https://discord.com/' style={{ textDecoration: 'none' }} target="_blank">
-                            <Image src='/assets/Discord.svg' />
+                            <Image src='/assets/Discord.svg' boxSize={'18px'} alt='discord' />
                         </Link>
                     </Flex>
                 </HStack>
