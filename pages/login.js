@@ -12,7 +12,7 @@ function Login() {
         if (email == "" || password == "") {
             alert("Please fill in all fields");
         } else {
-            if (email !== "turnkey" && password !== "fe_turnkey") {
+            if (email !== "turnkey@mail.com" && password !== "fe_turnkey") {
                 alert("wrong credential")
             } else {
                 Cookies.set("squid-token", "logged in", {
