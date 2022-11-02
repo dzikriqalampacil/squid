@@ -1,8 +1,10 @@
 import React from 'react'
-import { HStack, VStack, Text, Image } from '@chakra-ui/react'
+import { HStack, VStack, Text, Image, Link } from '@chakra-ui/react'
 import { ButtonPrimary } from '../Button'
+import Cookies from 'js-cookie'
 
 function Navbar() {
+    console.log(Cookies.get('squid-token'));
     return (
         <HStack justifyContent={'space-between'} px='10%' pt='40px' >
             <HStack alignItems={'flex-start'}>
@@ -11,7 +13,13 @@ function Navbar() {
             </HStack>
             <HStack>
                 <Text fontSize={'14px'} mr={4} color='#9E9E9E' cursor='pointer'>Home</Text>
-                <ButtonPrimary text='Login' />
+                {Cookies.get('squid-token') !== undefined ?
+                    <ButtonPrimary clickFunction={() => { Cookies.remove('squid-token'); window.location.reload() }} text='Logout' />
+                    :
+                    <Link href='/login' style={{ textDecoration: 'none' }}>
+                        <ButtonPrimary text='Login' />
+                    </Link>
+                }
             </HStack>
         </HStack>
     )

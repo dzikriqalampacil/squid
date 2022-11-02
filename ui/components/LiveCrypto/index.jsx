@@ -34,12 +34,11 @@ function CryptoItem({ name, id, price, change }) {
 }
 
 function CryptoList({ allCrypto }) {
-    console.log(allCrypto);
     return (
         <Box bg='#131415' w={{ base: '95%', md: '80%' }} borderRadius={'25px'} p={{ base: '30px', md: '65px' }} mt='63px'>
-            {allCrypto.data.map(ctx => <CryptoItem key={ctx.symbol} name={ctx.name} id={ctx.symbol} price={ctx.quote.USD.price.toString().slice(0, 8)} change={ctx.quote.USD.volume_change_24h.toString().slice(0, 6)} />)}
+            {allCrypto && allCrypto.data.map(ctx => <CryptoItem key={ctx.symbol} name={ctx.name} id={ctx.symbol} price={ctx.quote.USD.price.toString().slice(0, 8)} change={ctx.quote.USD.volume_change_24h.toString().slice(0, 6)} />)}
             <Flex justify={'center'}>
-                <ButtonSecondary text='Learn More' />
+                <ButtonSecondary clickFunction={() => alert("To Be Developed")} text='Learn More' />
             </Flex>
         </Box>
     )
