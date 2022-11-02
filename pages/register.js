@@ -48,7 +48,7 @@ function Register() {
                         <Input onChange={e => setRepeatPassword(e.target.value)} value={repeatPassword} placeholder='Repeat Password' fontSize='14px' py='12px' px='24px' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} type='password' />
                     </VStack>
                     <HStack pt='44px'>
-                        <ButtonPrimary text='Sign Up' clickFunction={handleSignup} />
+                        <ButtonPrimary text='Signup' clickFunction={handleSignup} />
                         <Link href='/login' style={{ textDecoration: 'none' }}>
                             <ButtonTertiary text='Already Registered?' />
                         </Link>

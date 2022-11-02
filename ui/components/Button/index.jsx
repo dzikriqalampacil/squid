@@ -3,7 +3,7 @@ import { Button, Flex, Text, Image } from '@chakra-ui/react'
 
 export function ButtonPrimary({ text, clickFunction }) {
     return (
-        <Button onClick={clickFunction} fontSize={'14px'} fontWeight={400} bg='linear-gradient(92.51deg, #FF9898 0.48%, #8054FF 100%);'>{text}</Button>
+        <Button _active={{ bg: 'linear-gradient(90deg, rgba(128,84,255,1) 0%, rgba(128,84,255,1) 39%, rgba(255,152,152,1) 100%)', transform: 'scale(1.2)' }} _hover={{ bg: 'linear-gradient(90deg, rgba(128,84,255,1) 0%, rgba(128,84,255,1) 39%, rgba(255,152,152,1) 100%)' }} onClick={clickFunction} fontSize={'14px'} fontWeight={400} bg='linear-gradient(92.51deg, #FF9898 0.48%, #8054FF 100%);'>{text}</Button>
     )
 }
 
