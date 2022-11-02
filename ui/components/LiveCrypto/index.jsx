@@ -5,11 +5,16 @@ import { ButtonPrimary, ButtonSecondary } from '../Button'
 function CryptoItem({ name, id, price, change }) {
     return (<>
         <Box display={{ base: 'none', md: 'block' }}>
-            <HStack justify={'space-between'} alignItems='center' mb='39px' >
-                <Text fontSize={{ base: '16px', lg: '32px' }} color='#D1D0D1'>{name}</Text>
-                <Text fontSize={{ base: '16px', lg: '24px' }} color='#7D7D7D'>{id}</Text>
+            <HStack justify={'space-between'} alignItems='center' mb='33px' >
+                <HStack align={'flex-end'}>
+                    <Text fontSize={{ base: '16px', lg: '32px' }} lineHeight={{ base: '20px', lg: '35px' }} color='#D1D0D1'>{name}</Text>
+                    <Text fontSize={{ base: '16px', lg: '24px' }} lineHeight={{ base: '18px', lg: '29px' }} color='#7D7D7D'>{id}</Text>
+                </HStack>
                 <Text fontSize={{ base: '16px', lg: '32px' }} color='#F4F4F4'>${price}</Text>
-                <Text fontSize='16px' color='#20BCA4'>{change}</Text>
+                {change[0] === "-" ?
+                    <Text fontSize='16px' color='#e64b58'>{change}%</Text> :
+                    <Text fontSize='16px' color='#20BCA4'>+{change}%</Text>
+                }
                 {/* <Image w='145px' h='30px' src='/assets/Decor.svg' /> */}
                 <ButtonPrimary text='Trade' />
             </HStack>
@@ -23,7 +28,10 @@ function CryptoItem({ name, id, price, change }) {
                 </VStack>
                 <VStack align={'flex-end'}>
                     <Text fontSize={{ base: '16px', lg: '32px' }} color='#F4F4F4'>${price}</Text>
-                    <Text fontSize='16px' color='#20BCA4'>{change}</Text>
+                    {change[0] === "-" ?
+                        <Text fontSize='16px' color='#e64b58'>{change}%</Text> :
+                        <Text fontSize='16px' color='#20BCA4'>+{change}%</Text>
+                    }
                 </VStack>
                 <ButtonPrimary text='Trade' />
             </HStack>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { HStack, VStack, Image, Text, Flex } from '@chakra-ui/react'
+import { HStack, VStack, Image, Text, Flex, Link } from '@chakra-ui/react'
 
 function Footer() {
     return (
@@ -37,17 +37,23 @@ function Footer() {
                     </HStack>
                 </VStack>
             </Flex>
-            <Flex px='12%' py='32px' bg='#121216' justifyContent={'space-between'} flexDirection={{ base: 'column', md: 'row' }}>
+            <Flex px='12%' py='32px' bg='#121216' justifyContent={'space-between'} flexDirection={{ base: 'column', md: 'row' }} align='center'>
                 <Text color='#9E9E9E' fontSize={'14px'} mb={{ base: '20px', md: '0' }}>Copyright © 2022 Dzikri. All rights reserved.</Text>
                 <HStack>
                     <Flex bg='#18181C' boxSize={'40px'} justify='center' align={'center'} borderRadius='16px'>
-                        <Image src='/assets/Twitter.svg' />
+                        <Link href='https://twitter.com/' style={{ textDecoration: 'none' }} target="_blank">
+                            <Image src='/assets/Twitter.svg' />
+                        </Link>
                     </Flex>
                     <Flex bg='#18181C' boxSize={'40px'} justify='center' align={'center'} borderRadius='16px'>
-                        <Image src='/assets/LinkedIn.svg' />
+                        <Link href='https://www.linkedin.com/' style={{ textDecoration: 'none' }} target="_blank">
+                            <Image src='/assets/LinkedIn.svg' />
+                        </Link>
                     </Flex>
                     <Flex bg='#18181C' boxSize={'40px'} justify='center' align={'center'} borderRadius='16px'>
-                        <Image src='/assets/Discord.svg' />
+                        <Link href='https://discord.com/' style={{ textDecoration: 'none' }} target="_blank">
+                            <Image src='/assets/Discord.svg' />
+                        </Link>
                     </Flex>
                 </HStack>
             </Flex>
