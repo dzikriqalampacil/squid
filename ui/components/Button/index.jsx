@@ -18,6 +18,6 @@ export function ButtonSecondary({ text, clickFunction }) {
 
 export function ButtonTertiary({ text }) {
     return (
-        <Button fontSize={'14px'} fontWeight={400} bg='#222228' color='#9E9E9E'>{text}<Image src='/assets/SmallArrow.svg' ml='10px' boxSize={'18px'} alt='arrow' /></Button>
+        <Button _active={{ transform: 'scale(1.2)' }} _hover={{ bg: '#222228' }} fontSize={'14px'} fontWeight={400} bg='#222228' color='#9E9E9E'>{text}<Image src='/assets/SmallArrow.svg' ml='10px' boxSize={'18px'} alt='arrow' /></Button>
     )
 }

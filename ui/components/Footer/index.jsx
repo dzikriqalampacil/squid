@@ -16,19 +16,19 @@ function Footer() {
                         Sections
                     </Text>
                     <HStack justifyContent={'space-between'} w='full' color='#9E9E9E' fontSize={'14px'}>
-                        <VStack align={'flex-start'}>
+                        <VStack align={'flex-start'} lineHeight='30px'>
                             <Text>Home</Text>
                             <Text>Live Trade</Text>
                             <Text>Pricing</Text>
                             <Text>Consult</Text>
                         </VStack>
-                        <VStack align={'flex-start'}>
+                        <VStack align={'flex-start'} lineHeight='30px'>
                             <Text>Home</Text>
                             <Text>Live Trade</Text>
                             <Text>Pricing</Text>
                             <Text>Consult</Text>
                         </VStack>
-                        <VStack align={'flex-start'}>
+                        <VStack align={'flex-start'} lineHeight='30px'>
                             <Text>Home</Text>
                             <Text>Live Trade</Text>
                             <Text>Pricing</Text>
