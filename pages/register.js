@@ -42,10 +42,10 @@ function Register() {
                     <Text fontWeight={600} fontSize={{ base: '24px', lg: '48px' }} >Register</Text>
                     <Text fontSize={{ base: '14px', lg: '18px' }} color='#9E9E9E' pb='27px' >Enjoy the largest cryptocurrency <br /> exchange at your fingertips.</Text>
                     <VStack spacing={'16px'} w='full'>
-                        <Input placeholder='Full Name' size='md' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} onChange={e => setName(e.target.value)} value={name} />
-                        <Input onChange={e => setEmail(e.target.value)} value={email} placeholder='Your Email' size='md' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} type='email' />
-                        <Input onChange={e => setPassword(e.target.value)} value={password} placeholder='Password' size='md' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} type='password' />
-                        <Input onChange={e => setRepeatPassword(e.target.value)} value={repeatPassword} placeholder='Repeat Password' size='md' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} type='password' />
+                        <Input onChange={e => setName(e.target.value)} value={name} placeholder='Full Name' fontSize='14px' py='12px' px='24px' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} />
+                        <Input onChange={e => setEmail(e.target.value)} value={email} placeholder='Your Email' fontSize='14px' py='12px' px='24px' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} type='email' />
+                        <Input onChange={e => setPassword(e.target.value)} value={password} placeholder='Password' fontSize='14px' py='12px' px='24px' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} type='password' />
+                        <Input onChange={e => setRepeatPassword(e.target.value)} value={repeatPassword} placeholder='Repeat Password' fontSize='14px' py='12px' px='24px' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} type='password' />
                     </VStack>
                     <HStack pt='44px'>
                         <ButtonPrimary text='Sign Up' clickFunction={handleSignup} />
