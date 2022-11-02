@@ -31,8 +31,8 @@ function Login() {
                     <Text fontWeight={600} fontSize={{ base: '24px', lg: '48px' }} >Login</Text>
                     <Text fontSize={{ base: '14px', lg: '18px' }} color='#9E9E9E' pb='27px' >Enjoy the largest cryptocurrency <br /> exchange at your fingertips.</Text>
                     <VStack spacing={'16px'} w='full'>
-                        <Input onChange={e => setEmail(e.target.value)} value={email} placeholder='Email' size='md' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} />
-                        <Input onChange={e => setPassword(e.target.value)} value={password} placeholder='Password' size='md' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} />
+                        <Input type='email' onChange={e => setEmail(e.target.value)} value={email} placeholder='Email' size='md' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} />
+                        <Input type='password' onChange={e => setPassword(e.target.value)} value={password} placeholder='Password' size='md' bg='#18181C' color='#9E9E9E' border={'none'} _placeholder={{ color: '#9E9E9E' }} />
                     </VStack>
                     <HStack pt='44px'>
                         <ButtonPrimary text='Login' clickFunction={handleLogin} />
