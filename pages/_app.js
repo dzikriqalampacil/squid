@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
 
-        <title>Squid</title>
+        <title>Squid | The Best Crypto App in The World</title>
         <meta name='description' content="The easiest place to buy and sell cryptocurrency today." />
 
         <meta property="og:image" content="/assets/SquidLogo.jpg" />
